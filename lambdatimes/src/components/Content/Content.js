@@ -11,7 +11,7 @@ export default class Content extends Component {
     super(props);
     this.state = {
       selected: 'all',
-      tabs: tabData,
+      tabs: [],
       cards: []
     };
   }
@@ -25,7 +25,7 @@ export default class Content extends Component {
   }
 
   selectTabHandler = tab => {
-    console.log(tab)
+   
     this.setState({
       selected: tab
     })
